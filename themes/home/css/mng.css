@@ -1,0 +1,92 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-10-19, 10:16:22
+    Author     : wolin
+*/
+
+/*面板相关*/
+.panel .row {
+    margin: 0 auto;
+}
+.panel-title > span {
+    line-height: 30px;
+}
+.panel-title > .btn-toolbar {
+    display: inline-block;
+}
+
+.pagination {
+    margin: 0 auto;
+}
+
+
+@media (max-width: 768px) {
+    .pagination {
+        margin-top: 5px;
+    }
+    .dataTables_info {
+        text-align: center;
+    }
+    .dataTables_pagination {
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom:10px; 
+    }
+    .form-control-static {
+        margin-bottom: -7px;
+    }
+    .region > div:not(:last-child) {
+        padding-bottom: 6px;
+    }
+    .form-inline > .input-group:not(:last-child) {
+        margin-bottom: 6px;
+    }
+    #selectDiv > div select{
+        /*border: 1px solid red;*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 768px) {
+    .pagination {
+        float: right;
+    }
+    .dataTables_info {
+        padding-top: 3px;
+        padding-right: 10px;
+        display: inline-block;
+    }
+    .dataTables_info label {
+        margin-bottom: 0px;
+    }
+    .dataTables_pagination {
+        text-align: right;
+    }
+    .form-inline .form-group > .form-control {
+        width: 100px;
+    }
+    #search-div .my-form-control {
+        width: 180px;
+    }
+    #search-div .my-form-control select {
+        width: 100%;
+    }
+    .form-inline .form-group {
+        margin-bottom: 10px; 
+        margin-right: 10px;
+    }
+    .my-serach-btn {
+        float: right;
+    }
+    .panel-body {
+        padding-bottom: 5px;
+    }
+    .myDate {
+        line-height: 66px;
+    }
+}

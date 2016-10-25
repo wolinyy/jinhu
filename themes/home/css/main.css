@@ -1,0 +1,138 @@
+/* 全局样式
+-------------------------------------------------- */
+
+*,
+::before,
+::after{
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;   /*清除点击默认的高亮效果*/
+  -webkit-box-sizing: border-box; /*以你的border开始计算你的宽度*/
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 60px;
+  padding-top: 51px;
+  background:#C0E7EC url("../img/body.jpg") no-repeat fixed center 0;
+  font-size: 14px;
+  font-family: "Microsoft YaHei", sans-serif; /*第二个是手机的默认字体*/
+}
+
+a{
+  text-decoration: none;
+  /*color: #000000;*/
+}
+
+ul{
+  list-style: none;
+}
+
+input,textarea{
+  border: none;
+  resize: none;
+  outline: none;  /*清除选中效果*/
+
+  -webkit-appearance: none;   /*清除浏览器默认样式*/
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.navbar-brand img{
+  width: 20px;
+  height: 20px;
+}
+
+textarea{
+    /*resize: none;*/
+}
+.nav > li > a {
+    outline: 0 none;
+}
+body > .container {
+  margin-top:10px; 
+  background: #fff;
+  background: rgba(255,255,255,0.5);
+  border-radius: 5px;
+  padding: 15px;
+}
+#myModal, #container{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(238, 238, 238, 0.5);
+  padding-top: 9px;
+  border-top: 1px solid rgba(238, 238, 238, 0.5);
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+/*logo图样式*/
+.navbar-brand {
+    width: 143px;
+    height: 50px;
+    padding: 6px;
+    background: url("/assets/img/dc-logo.png") no-repeat center center;
+}
+
+/*菜单相关*/
+.navbar-default {
+    background-color: rgba(224, 236, 237, 1);
+    border-color: rgb(192, 192, 192);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.125) inset;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #eee;
+    background-color: #337AB7;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #555;
+    background-color: #76ADDA;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    color: #555;
+    background-color: rgba(118, 173, 218, 0.5);
+}
+
+.require > label.control-label::before {
+    color: #F00;
+    font-weight: bold;
+    content: "* ";
+}
+
+.error {
+    color: #F00;
+    font-weight: 500;
+}
+
+
+@media (max-width: 768px) {
+    .form-group div + div{
+        margin-top: 10px;
+    }
+}

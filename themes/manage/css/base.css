@@ -1,0 +1,324 @@
+*,
+::before,
+::after{
+  margin: 0;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;   /*清除点击默认的高亮效果*/
+  -webkit-box-sizing: border-box; /*以你的border开始计算你的宽度*/
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body{
+  font-size: 14px;
+  font-family: "Microsoft YaHei", sans-serif; /*第二个是手机的默认字体*/
+  color: #000000;
+  background: #ffffff;
+  padding-top: 50px;
+  margin-bottom: 60px;
+}
+
+a{
+  text-decoration: none;
+  color: #000000;
+}
+
+ul{
+  list-style: none;
+}
+
+input,textarea{
+  border: none;
+  resize: none;
+  outline: none;  /*清除选中效果*/
+
+  -webkit-appearance: none;   /*清除浏览器默认样式*/
+}
+
+/*清除浮动*/
+.clearfix::before,
+.clearfix::after{
+  content: ".";
+  display: block;
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  clear: both;
+}
+
+.navbar-brand img{
+  width: 20px;
+  height: 20px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.container > .panel{
+    margin-top: 15px;
+}
+
+/*快速导航*/
+#fast-nav {
+    padding: 0px;
+}
+
+#fast-nav>ul>li.active{
+    background-color: #81D8E8;
+    background-image: none;
+    box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.15) inset;
+}
+#fast-nav>ul>li.active a{
+}
+#fast-nav li > a:focus, #fast-nav li > a:hover {
+    background-color: #81D8E8;
+}
+
+#fastNavTagP{
+    margin-right: -14px;
+    margin-top: -14px;
+}
+
+/*logo图样式*/
+.navbar-brand {
+    width: 143px;
+    height: 50px;
+    padding: 6px;
+    background: url("/assets/img/dc-logo.png") no-repeat center center;
+}
+
+/*菜单相关*/
+.navbar-default {
+    background-color: rgba(224, 236, 237, 1);
+    border-color: rgb(192, 192, 192);
+    box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.125) inset;
+}
+
+.navbar-default .navbar-nav > li > a:hover {
+    color: #eee;
+    background-color: #337AB7;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+    color: #555;
+    background-color: #76ADDA;
+}
+.navbar-default .navbar-nav > .open > a, .navbar-default .navbar-nav > .open > a:focus, .navbar-default .navbar-nav > .open > a:hover {
+    color: #555;
+    background-color: rgba(118, 173, 218, 0.5);
+}
+
+.nav-tabs {
+    margin-bottom: 15px;
+}
+
+/*面板相关*/
+.panel .row {
+    margin: 0 auto;
+}
+.panel-title > span {
+    line-height: 30px;
+}
+.panel-title > .btn-toolbar {
+    display: inline-block;
+}
+
+.pagination {
+    margin: 0 auto;
+}
+
+/* 统计图表相关 */
+.my-chart {
+    font: 12px/1.5 微软雅黑,宋体,arial,tahoma,sans-serif;
+}
+.my-chart > div > div:first-child {
+    padding-right: 4px;
+    padding-left: 4px;
+}
+.my-chart > div > div:last-child {
+    /*border: 1px solid red;*/
+}
+.my-chart .alert {
+    padding: 6px 6px 0px 6px;
+    margin: 5px -12px;
+}
+.my-chart table caption {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 0px;
+    color: #333;
+}
+.myChart{
+    cursor: pointer;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/*表单错误提示样式*/
+.error {
+    color:red;
+    font-weight: 500;
+}
+.require > label.control-label:before {
+    color: red;
+    font-weight: bold;
+    content: "* ";
+}
+.my-form-control {
+    padding: 0px;
+}
+.my-form-control .select2-selection{
+    border: 0px;
+    height: 32px;
+}
+/*搜索栏bootstrap与select2样式冲突调整*/
+.my-form-control .select2-selection--single .select2-selection__rendered {
+    line-height: 32px;
+}
+.my-form-control .select2-container .select2-selection--single .select2-selection__rendered {
+    padding-left: 12px;
+}
+.my-form-control .select2-selection--single .select2-selection__arrow {
+    height: 32px;
+    top: 0px;
+    right: 0px;
+}
+/*.select2-dropdown { z-index: 1000;}*/
+
+@media (max-width: 768px) {
+    .pagination {
+        margin-top: 5px;
+    }
+    .dataTables_info {
+        text-align: center;
+    }
+    .dataTables_pagination {
+        text-align: center;
+    }
+    .form-group {
+        margin-bottom:10px; 
+    }
+    .form-control-static {
+        margin-bottom: -7px;
+    }
+    .region > div:not(:last-child) {
+        padding-bottom: 6px;
+    }
+    .form-inline > .input-group:not(:last-child) {
+        margin-bottom: 6px;
+    }
+    #selectDiv > div select{
+        /*border: 1px solid red;*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+@media (min-width: 768px) {
+    .pagination {
+        float: right;
+    }
+    .dataTables_info {
+        padding-top: 3px;
+        padding-right: 10px;
+        display: inline-block;
+    }
+    .dataTables_info label {
+        margin-bottom: 0px;
+    }
+    .dataTables_pagination {
+        text-align: right;
+    }
+    .form-inline .form-group > .form-control {
+        width: 100px;
+    }
+    #search-div .my-form-control {
+        width: 180px;
+    }
+    #search-div .my-form-control select {
+        width: 100%;
+    }
+    .form-inline .form-group {
+        margin-bottom: 10px; 
+        margin-right: 10px;
+    }
+    .my-serach-btn {
+        float: right;
+    }
+    .panel-body {
+        padding-bottom: 5px;
+    }
+    .myDate {
+        line-height: 66px;
+    }
+}
+
+/* Main marketing message and sign up button */
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+}
+.jumbotron .btn {
+  padding: 14px 24px;
+  font-size: 21px;
+}
+
+.Wdate{
+    line-height: 20px;
+}
+/*列表相关*/
+thead tr th:first-child .checkbox-inline {
+    font-weight: unset;
+}
+table .checkbox-inline {width:100%;}
+.sort {
+    cursor: pointer;
+}
+.sort:hover {
+    background: #eee;
+}
+
+.sort_desc:after {
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-top: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+
+.sort_asc:after {
+    content: "";
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    margin-left: 4px;
+    vertical-align: middle;
+    border-bottom: 4px dashed;
+    border-right: 4px solid transparent;
+    border-left: 4px solid transparent;
+}
+/*表单相关*/

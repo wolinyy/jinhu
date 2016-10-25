@@ -1,0 +1,96 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 2016-9-28, 10:10:54
+    Author     : wolin
+*/
+
+#searchBox{
+    margin-bottom: 25px;
+}
+
+@media (max-width: 768px) {
+    #searchBox > form {
+        margin-bottom: 10px;
+    }
+}
+
+#infoTypeBox .panel{
+    margin-bottom: 10px;
+}
+#infoTypeBox .panel-heading{
+    padding: 0;
+    cursor: pointer;
+}
+#infoTypeBox .panel-heading:hover{
+    /*opacity: 0.8;*/
+    background: #eee;
+}
+#infoTypeBox .panel-heading img{
+    widows: 40px;
+    height: 40px;
+}
+#infoTypeBox .panel-heading span{
+    padding-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+#infoTypeBox .panel-heading:hover span{
+    font-weight: 700;
+}
+#infoTypeBox .panel-heading i{
+    float: right;
+    padding: 0 20px;
+    /*font-size: 20px;*/
+    line-height: 40px;
+    transition: all 1s ease 0s;
+}
+
+#infoTypeBox .panel-heading i.open{
+    transform:rotate(7deg);
+    -ms-transform:rotate(-90deg); 	/* IE 9 */
+    -moz-transform:rotate(-90deg); 	/* Firefox */
+    -webkit-transform:rotate(-90deg); /* Safari 和 Chrome */
+    -o-transform:rotate(-90deg); 	/* Opera */
+}
+#infoTypeBox .panel-body a{
+    display: block;
+    padding: 5px 0;
+}
+
+#infoNewPanel .panel-body{
+    padding: 0px;
+}
+.media-list .media-left{
+    padding: 0 10px;
+}
+.media-list .media-left .carousel{
+    width: 114px;
+    height: 64px;
+}
+.media-list .media-left img{
+    border-radius: 3px;
+    width: 114px;
+    height: 64px;
+}
+.media-list .media-body p{
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 0px;
+    padding-bottom: 1px;
+    color: #888;
+}
+.media-list .media-body span{
+    color: #555;
+}
+.media:hover{
+    background: #ececec;
+}
+.media {
+    margin: 0;
+    padding: 10px 0;
+}

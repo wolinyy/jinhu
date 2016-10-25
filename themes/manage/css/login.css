@@ -1,0 +1,247 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #777;
+}
+
+/* Custom default button */
+.btn-default,
+.btn-default:hover,
+.btn-default:focus {
+  color: #333;
+  text-shadow: none; /* Prevent inheritence from `body` */
+  background-color: #fff;
+  border: 1px solid #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background:#C0E7EC url(../img/body.jpg) no-repeat fixed center 0;
+}
+body {
+  color: #555;
+  text-align: center;
+  /*text-shadow: 0 1px 3px rgba(51,221,221,.25);*/
+  text-shadow: 0 1px 3px rgba(192,231,236,.5);
+}
+
+/* Extra markup and styles for table-esque vertical and horizontal centering */
+.site-wrapper {
+  display: table;
+  width: 100%;
+  height: 100%; /* For at least Firefox */
+  min-height: 100%;
+  /*-webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
+          /*box-shadow: inset 0 0 100px rgba(0,0,0,.5);*/
+}
+.site-wrapper-inner {
+  display: table-cell;
+  vertical-align: top;
+}
+.cover-container {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Padding for spacing */
+.inner {
+  padding: 15px;
+}
+
+
+/*
+ * Header
+ */
+.masthead-brand {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.masthead-nav > li {
+  display: inline-block;
+}
+.masthead-nav > li + li {
+  margin-left: 20px;
+}
+.masthead-nav > li > a {
+  padding-right: 0;
+  padding-left: 0;
+  font-size: 16px;
+  font-weight: bold;
+  color: #555; /* IE8 proofing */
+  color: rgba(85,85,85,.75);
+  border-bottom: 2px solid transparent;
+}
+.masthead-nav > li > a:hover,
+.masthead-nav > li > a:focus {
+  background-color: transparent;
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(85,85,85,.25);
+}
+.masthead-nav > .active > a,
+.masthead-nav > .active > a:hover,
+.masthead-nav > .active > a:focus {
+  border-bottom-color: #a9a9a9;
+  border-bottom-color: rgba(85,85,85,.25);
+}
+
+.form-signin {
+    text-align: left;
+    max-width: 340px;
+    margin: 0 auto;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 1px 1px 3px #000;
+}
+
+.form-signin > * { 
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.my-from-top { 
+    padding-top: 15px;
+    padding-bottom: 10px;
+    background-color: #EDFAFF;
+}
+.my-from-middle {
+    padding-top: 15px;
+    background-color: #DEF4FE;
+}
+.my-from-bottom {
+    padding-top: 1px;
+    padding-bottom: 1px;
+    background-color: #EDFAFF;
+}
+.register { margin-top: 15px;}
+.form-signin .form-signin-heading {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-weight:bold;
+}
+
+.form-signin .form-control {
+  position: relative;
+  height: auto;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.form-signin .form-control:focus {
+    z-index: 2;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 6px #5BC0DE;
+}
+
+.form-signin input[type="text"],
+.form-signin input[type="password"] {
+    height:34px;
+    background:#EDFAFF;
+    border-color: #ccc;
+    font-family: "comic sans ms",cursive;
+}
+
+.form-signin button[type="submit"] {
+    margin-top: 15px;
+    font-weight:bold;
+    font-size:16px;
+    font-family: "comic sans ms",cursive, Arial, sans-serif;
+    text-shadow: 0px 1px 3px rgba(0, 0, 0, 0.4), 0px 0px 30px rgba(0, 0, 0, 0.075);
+}
+
+#verifyCode {
+    margin:0px;
+}
+.form-control {padding-left: 32px;}
+.has-feedback .form-control {
+    padding-right:12px;
+}
+.form-control-feedback {right: unset;}
+
+@media (max-width: 400px) {
+    .head-title {
+        font-size:28px;
+    }
+    .inner {
+        padding-top: 10px;
+    }
+    
+}
+
+#code {
+	cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .masthead-brand {
+    float: left;
+  }
+  .masthead-nav {
+    float: right;
+  }
+}
+
+
+/*
+ * Cover
+ */
+
+.cover {
+  padding: 0 20px;
+}
+.cover .btn-lg {
+  padding: 10px 20px;
+  font-weight: bold;
+}
+
+
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #555; /* IE8 proofing */
+  color: rgba(85,85,85,.75);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 900px;
+  }
+}

@@ -1,0 +1,7 @@
+/*layout*/
+#wrap{width:100%; max-width:640px; padding:40px 0; margin:0 auto; background:#fff;}
+.weixin-hint li {display:block;font-size: 20px; margin-bottom: 5px; color:#666;height:auto;}
+.weixin-hint .wx-txt {font-size:14px;font-weight:700;color:red;}
+/*pictrue*/
+.picture img{width:100%; /*max-height:280px;*/}
+.mry8{margin:8px 0;}
