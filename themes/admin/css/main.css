@@ -68,10 +68,7 @@ body > .container {
 
 /*logo图样式*/
 .navbar-brand {
-    width: 143px;
-    height: 50px;
     padding: 6px;
-    background: url("/assets/img/dc-logo.png") no-repeat center center;
 }
 
 /*菜单相关*/

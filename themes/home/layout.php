@@ -44,8 +44,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
           </button>
             
             <a class="navbar-brand" href="/" title="首页">
-              <!--<img src="<?=ASSETS;?>img/dc-logo.png">-->
-              <span class="sr-only"><?=$site_name;?></span>
+              <img class='hidden-xs' src="<?=ASSETS;?>img/logo-lg.png">
+              <img class='visible-xs-block' src="<?=ASSETS;?>img/logo-sm.png">
+              <h1 class="sr-only"><?=$site_name;?></h1>
           </a>
         </div>
         <div class="collapse navbar-collapse">
