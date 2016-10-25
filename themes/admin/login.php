@@ -95,7 +95,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
           <div class="mastfoot">
             <div class="inner">
-                <p>杭州敦崇科技股份有限公司.</p>
+                <p><?=WEB_SITE;?></p>
                 <p>页面加载耗时 <strong>{elapsed_time}</strong> 秒. &nbsp;内存使用 <strong>{memory_usage}</strong>.</p>
             </div>
           </div>

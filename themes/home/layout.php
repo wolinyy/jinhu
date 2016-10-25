@@ -123,7 +123,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <div class="container">
           <p>
               &copy;<?=WEB_SITE;?> &nbsp;&nbsp;
-              京公网安备11000002000001号
+              <?=WEB_BEIAN;?>
           </p>
       </div>
     </div>
