@@ -1,8 +1,5 @@
 .DS_Store
 
-logs
-logs/*
-
 runtime/caches/*
 runtime/captcha/*
 runtime/logs/*
@@ -38,5 +35,3 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.stTheme.cache
 *.sublime-workspace
 *.sublime-project
-/runtime
-/logs
