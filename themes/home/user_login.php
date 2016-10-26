@@ -36,7 +36,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
           <div class="masthead clearfix">
             <div class="inner">
-              <h3 class="masthead-brand"><img src="<?=ASSETS;?>img/dc-logo.png"></h3>
+              <h3 class="masthead-brand"><img src="<?=ASSETS;?>img/logo-lg.png"></h3>
               <ul class="nav masthead-nav sr-only">
                 <li class="active hide"><a href="#">首页</a></li>
                 <li><a href="/product_one" target="_blank">产品中心</a></li>

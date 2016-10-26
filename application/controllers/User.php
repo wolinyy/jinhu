@@ -257,7 +257,7 @@ class User extends Home_Controller {
         $data = $this->input->post('data', TRUE);
        
         //用户名不可以包含@字符
-        if(false === strpos($data['name'], '@')){
+        if(false !== strpos($data['name'], '@')){
             $resp = [
                 'code'=>-1,
                 'msg'=> '用户名不可以包含@字符',
@@ -314,7 +314,6 @@ class User extends Home_Controller {
         $salt = md5($data['name'] . time());
         $data['create_at'] = time();
         $data['update_at'] = $data['create_at'];
-        $data['update_at'] = $data['create_at'];
         $data['salt'] = $salt;
         $data['passwd'] = md5($data['passwd'] . $salt);
         
@@ -323,6 +322,8 @@ class User extends Home_Controller {
             $emailData['id'] = $ret;
             $emailData['email'] = $data['email'];
             $emailData['salt'] = $data['salt'];
+            $emailData['name'] = $data['name'];
+            $emailData['update_at'] = $data['update_at'];
             $emailData['resendcnt'] = 1;
             $emailData['sendtime'] = time();
             //发送注册邮件
@@ -457,7 +458,7 @@ class User extends Home_Controller {
 
         $this->email->subject(WEB_SITE . '账号激活');
         $this->email->message(
-            '您已经注册成为了' .WEB_SITE . '的用户，验证激活后即可立即使用.'
+            $data['name'] . '，您已经注册成为了' .WEB_SITE . '的用户，验证激活后即可立即使用.'
             .'<strong><a href="' . site_url('user/email_active/' . $data['id']) . '?code=' . md5($data['salt'] . $data['update_at']) . '">立即激活</a></strong>'
             .'<p>如果您没有注册，请忽略这封邮件</p>'
         );

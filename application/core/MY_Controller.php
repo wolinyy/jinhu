@@ -230,9 +230,13 @@ class Home_Controller extends BASE_Controller {
                         $emailData['id'] = $row['id'];
                         $emailData['email'] = $row['email'];
                         $emailData['salt'] = $row['salt'];
-                        $emailData['resendcnt'] = 1;
+			$emailData['name'] = $row['name'];
+			$emailData['update_at'] = $row['update_at'];
                         $emailData['sendtime'] = time();
 
+			$dataStr = $this->session->userdata(self::SESSION_EMAIL_SEND);
+                        $data = json_decode($dataStr, true);
+                        $emailData['resendcnt'] = (isset($data['resendcnt']) && !empty($data['resendcnt']))?$data['resendcnt']:1;
                         $this->session->set_userdata(self::SESSION_EMAIL_SEND, json_encode($emailData));
                         $errMsg = '账户未激活, ' . '<strong><a href="' . site_url('user/user_resend') . '">立即激活</a></strong>';
                         break;
