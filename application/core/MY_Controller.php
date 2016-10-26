@@ -219,7 +219,7 @@ class Home_Controller extends BASE_Controller {
         $this->load->model('Base');
         $this->Base->setTable($this->table);
         $mix['where'] = 'name="' . $param['username'] . '" or email="' . $param['username'] .'"';
-        $mix['field'] = 'id, name, role_id, email, passwd, salt, status';
+        $mix['field'] = 'id, name, role_id, email, passwd, salt, status, update_at';
 
         $row = $this->Base->selectOne($mix);
         if($row){
