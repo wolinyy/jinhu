@@ -33,6 +33,7 @@ body {
   color: #555;
   text-align: center;
   /*text-shadow: 0 1px 3px rgba(51,221,221,.25);*/
+  font-family: "Microsoft YaHei", sans-serif; /*第二个是手机的默认字体*/
   text-shadow: 0 1px 3px rgba(192,231,236,.5);
 }
 
@@ -145,7 +146,6 @@ body {
     height:34px;
     background:#EDFAFF;
     border-color: #ccc;
-    font-family: "comic sans ms",cursive;
 }
 
 .form-signin button[type="submit"] {

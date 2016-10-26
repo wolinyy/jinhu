@@ -137,6 +137,7 @@ function img_crop($src_path, $dst_path = ''){
             'msg' => $ci->image_lib->display_errors('', '')
         );
     }else{
+	shuiyin($src_path);
         if(!empty($dst_path)){
             create_dir(dirname($dst_path));
             rename($src_path, $dst_path);
@@ -146,6 +147,29 @@ function img_crop($src_path, $dst_path = ''){
     }
     
     return $resp;
+}
+
+function shuiyin($src_path) {
+    $ci = &get_instance();
+    
+    $ci->load->library('image_lib');
+
+    chmod($src_path, 0777);
+    $config['source_image'] = $src_path;
+    $config['wm_text'] = WEB_URL;
+    $config['wm_type'] = 'text';
+    $config['wm_font_path'] = ASSERTS_DIR . 'font/VerifyCode.ttf';
+    $config['wm_font_size'] = '24';
+    $config['wm_font_color'] = 'ffffff';
+    $config['wm_vrt_alignment'] = 'bottom';
+    $config['wm_hor_alignment'] = 'right';
+    $config['wm_hor_offset'] = '-40';
+    $config['wm_vrt_offset'] = '-20';
+    $config['wm_padding'] = '0';
+
+    $ci->image_lib->initialize($config); 
+
+    $ci->image_lib->watermark();
 }
 
 function getShortName($oldName) {

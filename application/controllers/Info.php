@@ -883,8 +883,8 @@ class Info extends Home_Controller {
         $this->Base->setTable($this->table_view);
         $this->Base->set_cache_save(false);
         $tmp = $this->Base->selectPage([
-//            'where' => ' is_delete = 0 and uid = ' . $this->user_id,
-            'where' => ' is_delete = 0 ',
+            'where' => ' is_delete = 0 and uid = ' . $this->user_id,
+            #'where' => ' is_delete = 0 ',
             'order_by'=>'update_at desc',
 //            'field'=>'id, title, content, update_at, t1_name, t2_name, r1_name, r2_name, addr_two_id, type_one_id, type_two_id, status',
             'pageNow' => $para['pageNow'],
