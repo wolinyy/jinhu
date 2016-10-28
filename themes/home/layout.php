@@ -7,11 +7,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="Description" content="金湖生活网，是淮安金湖本地的分类信息网！为你提供房屋租售、求职招聘、二手物品、车辆买卖、生活黄页等海量分类信息，充分满足您免费查看/发布信息的需求。金湖生活网-为生活服务 jinhu.live！">
+    <meta name="Keywords" content="金湖,淮安金湖,金湖分类信息,金湖生活网" />
     <link rel="icon" href="/favicon.ico">
 
-    <title><?=$title;?></title>
+    <title><?=$title;?><?=isset($typeInfo['name'])?' - ' . $typeInfo['name']:'';?></title>
 
     <!-- Bootstrap core CSS -->
     <link href="<?=ASSETS;?>bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
