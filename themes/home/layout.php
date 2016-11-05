@@ -8,7 +8,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <meta name="Description" content="金湖生活网，是淮安金湖本地的分类信息网！为你提供房屋租售、求职招聘、二手物品、车辆买卖、生活黄页等海量分类信息，充分满足您免费查看/发布信息的需求。金湖生活网-为生活服务 jinhu.live！">
-    <meta name="Keywords" content="金湖,淮安金湖,金湖分类信息,金湖生活网" />
+    <meta name="Keywords" content="金湖,金湖生活,分类信息,金湖生活网" />
     <link rel="icon" href="/favicon.ico">
 
     <title><?=$title;?><?=isset($typeInfo['name'])?' - ' . $typeInfo['name']:'';?></title>
@@ -24,7 +24,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       <script src="<?=ASSETS;?>bootstrap/relate-js/html5shiv.min.js"></script>
       <script src="<?=ASSETS;?>bootstrap/relate-js/respond.min.js"></script>
     <![endif]-->
-    
+   
+    <script>
+	var _hmt = _hmt || [];
+	(function() {
+  	    var hm = document.createElement("script");
+  	    hm.src = "//hm.baidu.com/hm.js?822637ffe776b5459a3cd78fdcf71bab";
+  	    var s = document.getElementsByTagName("script")[0]; 
+  	    s.parentNode.insertBefore(hm, s);
+	})();
+    </script>
+
+ 
     <script src="<?=ASSETS;?>jquery/jquery.min.js"></script>
     <script src="<?=ASSETS;?>bootstrap/dist/js/bootstrap.min.js"></script>
   </head>
@@ -122,7 +133,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
     <div class="footer">
       <div class="container">
           <p>
-              &copy;<?=WEB_SITE;?> &nbsp;&nbsp;
+              &copy;<?=WEB_SITE;?> &nbsp;&nbsp;淮安金湖县免费的分类信息发布查询平台
               <?=WEB_BEIAN;?>
           </p>
       </div>

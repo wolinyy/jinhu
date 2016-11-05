@@ -4,9 +4,7 @@ Disallow: /test/
 Disallow: /user/
 
 Disallow: /runtime/
-Disallow: /assets/
 Disallow: /doc/
-Disallow: /themes/
 
 Sitemap: http://www.jinhu.live/sitemap.xml
 

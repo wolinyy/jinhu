@@ -134,7 +134,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     </div>
                 </div>
             </div>
-            <div class="form-group require"> 
+            <div class="form-group require hide"> 
                 <label for="passwd" class="col-sm-3 control-label"> 管理密码</label>
                 <div class="col-sm-6">
                     <input class="form-control" name="passwd" id="passwd" value="" placeholder=" 管理密码" required>

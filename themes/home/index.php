@@ -52,7 +52,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 <div class="panel panel-danger" id="infoNewPanel">
   <div class="panel-heading">
-    <strong>淮安金湖县</strong>&nbsp;最新发布的&nbsp;<strong><?=$limitCnt;?></strong>&nbsp;条信息，首页免费展示！快点免费发布信息吧！
+    <strong><?=WEB_SITE;?></strong>&nbsp;最新发布的&nbsp;<strong><?=$limitCnt;?></strong>&nbsp;条分类信息，首页免费展示！快点免费发布信息吧！
   </div>
   <div class="panel-body">
       <ul class="media-list" id="infoList">

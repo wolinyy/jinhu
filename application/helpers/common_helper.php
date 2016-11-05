@@ -43,7 +43,7 @@ function get_attrs_value($str, $key) {
 
 function timeShow($time) {
     $currTime = time();
-    $day = ceil(($currTime-$time)/86400);
+    $day = floor(($currTime-$time)/86400);
     
     $ret;
     if($day == 0){

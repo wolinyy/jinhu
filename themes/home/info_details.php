@@ -118,9 +118,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 
                 <dl class="dl-horizontal" id="xxxq">
                     <dt>信息详情：</dt>
-                    <dd><?=$content;?></dd>
+                    <dd><?=str_replace("\n", '<br />', $content);?></dd>
                 </dl>
                 
+		<h4 class="text-danger text-center">联系我时,请说是在&nbsp;<a href='<?=site_url();?>'><strong><?=WEB_SITE;?></strong></a>&nbsp;上看到的,谢谢!</h4>
+
                 <div class="row">
                     <?php if(isset($imgs) && !empty($imgs)) foreach ($imgs as $key => $value):?>
                         <div class="col-xs-6">
