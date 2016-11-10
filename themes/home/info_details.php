@@ -10,6 +10,12 @@ defined('BASEPATH') OR exit('No direct script access allowed');
         font-size: 20px;
         font-weight: 700;
     }
+    .imgLineShow{
+	margin-bottom:5px;
+    }
+    .imgLineShow > div{
+	padding: 0px 5px;
+    }
 </style>
 
 <div class="row">
@@ -123,13 +129,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 
 		<h4 class="text-danger text-center">联系我时,请说是在&nbsp;<a href='<?=site_url();?>'><strong><?=WEB_SITE;?></strong></a>&nbsp;上看到的,谢谢!</h4>
 
-                <div class="row">
                     <?php if(isset($imgs) && !empty($imgs)) foreach ($imgs as $key => $value):?>
-                        <div class="col-xs-6">
+                        <?php if($key % 2 == 0):?>
+			<div class="row imgLineShow">
+			<?php endif;?>
+			<div class="col-xs-6">
                             <img src="<?=IMG_URL . $value['path'];?>" class="img-thumbnail">
                         </div>
+                        <?php if($key % 2 != 0):?>
+			</div>
+			<?php endif;?>
                     <?php endforeach;?>
-                </div>
             </div>   
         </div>
     </div>

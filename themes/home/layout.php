@@ -65,19 +65,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                 <li class='<?=($class=='info')?'active':'';?>' >
                     <a href="<?=site_url('info');?>"><span class="hidden-sm">分类</span>信息</a>
                 </li>
-<!--                <li  >
-                    <a href="<?=site_url('info');?>"><span class="hidden-sm">地方</span>行业</a>
-                </li>
-                <li  >
-                    <a href="<?=site_url('info');?>">特色<span class="hidden-sm">产品</span></a>
-                </li>
-                <li  >
-                    <a href="<?=site_url('info');?>">团购<span class="hidden-sm">生活</span></a>
-                </li>
-                <li  >
-                    <a href="<?=site_url('info');?>"><span class="hidden-sm">优惠</span>促销</a>
-                </li>
--->
           </ul>
           <ul class="nav navbar-nav navbar-right">
             <?php if(isset($_username)):?>
@@ -90,10 +77,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
               <ul class="dropdown-menu" role="menu">
                 <!--<li class="dropdown-header">欢迎登录</li>-->
                 <li class="divider"></li>
-<!--                <li class="<?=($class=='user'&&$method=='to_update')?'active':'';?>"><a href="<?=site_url('/user/to_update');?>">
-                    <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 
-                    个人信息修改</a>
-                </li>-->
                 <li><a href="<?=site_url('/user/user_reset_pwd');?>">
                     <span class="glyphicon glyphicon-edit" aria-hidden="true"></span> 
                     密码修改</a>
@@ -104,7 +87,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     分类信息管理</a>
                 </li>
                 <li class="divider"></li>
-                <!--<li class="dropdown-header">Nav header</li>-->
                 <li><a href="<?=site_url('user/logout');?>">
                     <span class="glyphicon glyphicon-log-out" aria-hidden="true"></span> 
                     退出</a>
@@ -139,33 +121,6 @@ defined('BASEPATH') OR exit('No direct script access allowed');
       </div>
     </div>
 
-    <!--模态框-->
-    <form id="myModal" class="modal fade">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-            <h4 class="modal-title">添加或编辑模态框</h4>
-          </div>
-          <div class="modal-body form-horizontal">
-              <!--<form class="form-horizontal"></form>-->
-            <p>One fine body&hellip;</p>
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" data-dismiss="modal">取消</button>
-            <button type="submit" class="btn btn-primary">提交</button>
-          </div>
-        </div><!-- /.modal-content -->
-      </div><!-- /.modal-dialog -->
-    </form><!-- /.modal -->
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <!--<script src="<?=ASSETS;?>jquery/jquery.min.js"></script>-->
-<!--    <script src="<?=ASSETS;?>bootstrap/dist/js/bootstrap.min.js"></script>-->
-    
-    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="<?=ASSETS;?>bootstrap/relate-js/ie10-viewport-bug-workaround.js"></script>
   </body>
 </html>

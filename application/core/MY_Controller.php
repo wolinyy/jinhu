@@ -42,7 +42,8 @@ class BASE_Controller extends CI_Controller {
 //        print_r($data);exit;
         $this->content = array_merge($this->content, $content);
         $this->content['_content'] = $this->load->view($view, $data, true);
-        $this->load->view('layout', $this->content);
+        $html = $this->load->view('layout', $this->content, true);
+	echo higrid_compress_html($html);
     }
     
     protected function curl($url, $data='', $debug = false) {
