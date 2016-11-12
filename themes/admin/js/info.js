@@ -48,7 +48,7 @@ function TableRefresh(_self){
             + '<input type="checkbox" value="' + list[i].id + '">'
             + ((page.page_now-1)*page.page_size+i+1) + '</label>'
             + '</td><td>' + list[i].t1_name + '/' + list[i].t2_name
-            + '</td><td>' + list[i].r1_name + '/' + list[i].r2_name
+            + '</td><td>' + list[i].r1_name + (list[i].r2_name?'/' + list[i].r2_name:"")
             + '</td><td>' + (list[i].title?list[i].title:"")
             + '</td><td>' + (list[i].content?list[i].content:"")
             + '</td><td>' + (list[i].name?list[i].name:"")

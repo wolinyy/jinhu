@@ -298,6 +298,8 @@ class Admin_Controller extends BASE_Controller {
     public function __construct() {
         parent::__construct();
         
+	$this->load->helper('common');
+
         $this->login_check();
         
         //切换主题

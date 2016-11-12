@@ -79,7 +79,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
                     <a href="<?=site_url('info/details/'.$item['id']);?>"><?=$item['title'];?></a>
                 </h4>
                 
-              <p><?=$item['content'];?><?=$item['content'];?><?=$item['content'];?><?=$item['content'];?><?=$item['content'];?><?=$item['content'];?></p>
+              <p><?=$item['content'];?></p>
               <span class="hidden-xs"><a href="<?=site_url('/info/category/'.$item['type_one_id']);?>"><?=$item['t1_name'];?></a>-<a href="<?=site_url('/info/category/'. $item['type_one_id'].'/'.$item['type_two_id']);?>"><?=$item['t2_name'];?></a>&nbsp;&nbsp;</span>
               <span><?=$item['r1_name']. ($item['addr_two_id']==0?'':'-'.$item['r2_name']);?></span>&nbsp;&nbsp;
               <span><?=timeShow($item['update_at']);?></span>
